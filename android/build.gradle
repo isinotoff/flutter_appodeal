@@ -41,6 +41,8 @@ android {
     }
 
     dependencies {
+        api 'com.google.android.gms:play-services-ads:15.0.1'
+        api 'com.google.android.gms:play-services-location:15.0.1'
         api fileTree(dir: 'libs', include: ['*.jar'])
     }
 }
