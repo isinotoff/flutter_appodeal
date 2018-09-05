@@ -121,4 +121,9 @@ public class FlutterAppodealPlugin implements MethodCallHandler, RewardedVideoCa
     public void onRewardedVideoClosed(boolean b) {
         channel.invokeMethod("onRewardedVideoWillDismiss", argumentsMap());
     }
+
+    @Override
+    public void onRewardedVideoExpired() {
+        channel.invokeMethod("onRewardedVideoExpired", argumentsMap());
+    }
 }
